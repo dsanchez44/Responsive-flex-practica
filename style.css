@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+:root {
+  --rtc-color1: #1090cb;
+  --rtc-color2: #000000;
+  --rtc-color3: #ffffff;
+  --rtc-color4: rgb(143, 103, 29);
+  --rtc-color5: rgb(83, 47, 23);
+  --rtc-background-color: #1090cb2b;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  background-color: var(--rtc-color4);
+  height: 100px;
+}
+footer {
+  background-color: var(--rtc-color5);
+  display: flex;
+  justify-content: space-around;
+}
+main {
+  padding-bottom: 200px;
+}
+.footer-bold {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer-about-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.footer-about-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+.footer-about-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+#ember-head {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  padding: 5px;
+}
+#ember-icon {
+  height: 40px;
+  width: 40px;
+}
+#nav-ember {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  left: 35%;
+  right: 35%;
+  padding: 2px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#button-contact-us {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background-color: transparent;
+  padding: 10px 70px 10px 70px;
+  border-color: var(--rtc-color3);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+body {
+  min-height: 100svh;
+  background-color: rgb(226, 132, 24);
+}
+#hero-ember {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.info {
+  width: 20%;
+  min-width: 500px;
+}
+#hero-ember > img {
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+  padding-top: 30px;
+}
+.info > h2 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.info > p {
+  font-size: 20px;
+  padding-bottom: 35px;
+}
+.hero-button > button {
+  color: var(--rtc-color2);
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid var(--rtc-color2);
+  background-color: var(--rtc-color1);
+}
+button {
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  border: none;
+}
+.burger-box {
+  display: none;
+}
+.service-images-first {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 150px;
+}
+.service-images-second {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+}
+.service-table > h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 80px 10px 80px 5px;
+}
+
+li > img {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+}
+li > p {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 817px) {
+  .hero-button {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .info {
+    width: 100%;
+    min-width: 0px;
+  }
+  #nav-ember {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  #ember-head {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 42%;
+  }
+  #ember-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  #ember-head:last-child {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+  }
+  #button-contact-us {
+    display: none;
+  }
+  .burger-box {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .burger-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+}
